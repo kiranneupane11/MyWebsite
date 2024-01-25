@@ -121,8 +121,26 @@ button
     background: none !important;
     -webkit-box-shadow: none;
             box-shadow: none;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
 }
 
+.btn-primary:hover + #collapse-item-1 + #collapse-item-2 + #collapse-item-3,
+#collapse-item-1:hover {
+    display: block;
+    transition: height 0.3s ease;
+
+}
+#collapse-item-2:hover{
+    display: block;
+    transition: height 0.3s ease;
+
+}
+
+#collapse-item-3:hover {
+    display: block;
+    transition: height 0.3s ease;
+}
 @media (max-width:600px)
 {
     html
